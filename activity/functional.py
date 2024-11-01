@@ -1,18 +1,3 @@
-'''
-NO FOR OR WHILE LOOPS ALLOWED
-NO COMPREHENSIONS ALLOWED
-
-You can assume valid, non-empty input
-
-Useful functions
-- min
-- max
-- sorted
-- map
-- filter
-
-'''
-
 # Wave 1
 # Write a function that takes in a list of words and returns the shortest one. (assume no ties)
 
