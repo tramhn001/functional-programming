@@ -54,4 +54,10 @@ def report(word, function, function_name):
 # The returned list should be sorted by in order of increasing length.
 
 def sorted_valid_passwords(passwords):
+    # NOTE: .isalpha() probably allows more characters than we would expect,
+    # depending on how we interpret "alphabetic". The Unicode (text character)
+    # standard uses a broader definition of alphabetic than just A-Z and a-z.
+    # It includes the "letter" characters from all worlds languages. So if we
+    # really wanted to limit to A-Z and a-z, we would need to implement our own
+    # check.
     return list(filter(lambda p: not p.isalpha(), sorted(passwords, key=len)))
